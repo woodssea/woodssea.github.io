@@ -30,39 +30,39 @@
                     <colgroup>
                         <col span="2">
                         <col title="Name">
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
+                        <col title="Mass">
+                        <col title="Diameter">
+                        <col title="Density">
+                        <col title="Gravity">
+                        <col title="Length of day">
+                        <col title="Distance from Sun">
+                        <col title="Mean Temperature">
+                        <col title="Number of Moons">
+                        <col title="Notes">
+                        <col title="Image">
                     </colgroup>        
                         <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
                         <thead>
                             <tr>
                                 <td colspan="2"></td>
-                                <th>Name</th>
-                                <th>Mass (10<sup>24</sup>kg)</th>
-                                <th>Diameter (km)</th>
-                                <th>Density (kg/m<sup>3</sup>)</th>
-                                <th>Gravity (m/s<sup>2</sup>)</th>
-                                <th>Length of day (hours)</th>
-                                <th>Distance from Sun (10<sup>6</sup>km)</th>
-                                <th>Mean temperature (°C)</th>
-                                <th>Number of moons</th>
-                                <th>Notes</th>
-                                <th>Image</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                                <th scope="col">Diameter (km)</th>
+                                <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                                <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                                <th scope="col">Length of day (hours)</th>
+                                <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                                <th scope="col">Mean temperature (°C)</th>
+                                <th scope="col">Number of moons</th>
+                                <th scope="col">Notes</th>
+                                <th scope="col">Image</th>
                             </tr>
                         </thead>
                         <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
                     <tbody>
                        <tr>
-                            <th colspan="2" rowspan="4">Terrestial planets</th>
-                            <th>Mercury</th>
+                            <th colspan="2" rowspan="4" scope="rowgroup">Terrestial planets</th>
+                            <th scope="row">Mercury</th>
                             <td>0.330</td>
                             <td>4,879</td>
                             <td>5427</td>
@@ -77,69 +77,69 @@
 
 
                        <tr>
-                        <th>Venus</th>
+                        <th scope="row">Venus</th>
+                        <td>4.87</td>
+                        <td>12,104</td>
+                        <td>5243</td>
+                        <td>8.9</td>
+                        <td>2802.0</td>
+                        <td>108.2</td>
+                        <td>464</td>
+                        <td>0</td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><img src="images/venus.jpg" alt="Cloudy white hot planet that melts everything"></td>
                        </tr>
 
 
                        <tr>
-                        <th>Earth</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th scope="row">Earth</th>
+                        <td>5.97</td>
+                        <td>12,756</td>
+                        <td>5514</td>
+                        <td>9.8</td>
+                        <td>24.0</td>
+                        <td>149.6</td>
+                        <td>15</td>
+                        <td>1</td>
+                        <td>Our world</td>
+                        <td><img src="images/earth.png" alt="Blue and green nice place to live"></td>
                        </tr>
 
 
                        <tr>
-                        <th>Mars</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th scope="row">Mars</th>
+                        <td>0.642</td>
+                        <td>6,792</td>
+                        <td>3933</td>
+                        <td>3.7</td>
+                        <td>24.7</td>
+                        <td>227.9</td>
+                        <td>-65</td>
+                        <td>2</td>
+                        <td>The red planet</td>
+                        <td><img src="images/mars.jpg" alt="Red rock nothing too special"></td>
                        </tr>
 
 
                        <tr>
-                        <th rowspan="4">Jovian Planets</th>
+                        <th rowspan="4" scope="rowgroup">Jovian Planets</th>
                         <th rowspan="2">Gas Giants</th>
-                        <th>Jupiter</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th scope="row">Jupiter</th>
+                        <td>1898</td>
+                        <td>142,984</td>
+                        <td>1326</td>
+                        <td>23.1</td>
+                        <td>9.9</td>
+                        <td>778.6</td>
+                        <td>-110</td>
+                        <td>67</td>
+                        <td>The largest planet</td>
+                        <td> <img src="images/jupiter.jpg" alt="Planet with big red pimple storm"></td>
                        </tr>
 
 
                        <tr>
-                        <th>Saturn</th>
+                        <th scope="row">Saturn</th>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -155,7 +155,7 @@
 
                        <tr>
                         <th rowspan="2">Ice Giants</th>
-                        <th>Uranus</th>
+                        <th scope row>Uranus</th>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -170,7 +170,7 @@
 
 
                        <tr>
-                        <th>Neptune</th>
+                        <th scope="row">Neptune</th>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -186,7 +186,7 @@
 
                        <tr>
                         <th colspan="2">Dwarf Planets</th>
-                        <th>Pluto</th>
+                        <th scope="row">Pluto</th>
                         <td></td>
                         <td></td>
                         <td></td>

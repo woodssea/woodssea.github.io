@@ -40,7 +40,7 @@ tr:nth-child(odd) td {
   background-color: rgb(245,245,245);
 }
 
-col:nth-child(2) {
+col:nth-child(3) {
     border:2px solid #000;
 }
 
