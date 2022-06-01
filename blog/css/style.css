@@ -50,20 +50,35 @@
 
 
 @font-face {
-    font-family: "ultra-regular";
+    font-family: "ultra";
+    src: url('../fonts/serif/ultra-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+
+@font-face {
+    font-family: "roboto";
+    src: url('../fonts/serif/robotoslab-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 
 h1{
-    font-family: "ultra-regular", Garamond, serif;
-    font-size: 2rem;
-    
+    font-family: "ultra", Garamond, serif;
+    font-size: 3rem;
+    letter-spacing: .25rem;
+    transform: rotate(-5deg);
+    margin-top: .02rem;
+    margin-bottom: .09rem;
+
 }
 
 
 .highlight {
+    font-family: 'ultra';
     display: inline-block;
     border: 1px solid #000;
     padding: 1rem 1.75rem;
@@ -72,15 +87,23 @@ h1{
     border-bottom-right-radius: 15px;
     background-color: brown;
     color: #fff;
+    box-shadow: 5px 5px 4px -1px #888;
 
 }
 
 P {
-    font-family: "roboto-regular";
+    font-family: roboto, Arial, sans-serif;
+    margin-top: 1rem;
 }
 
 
-h2, h3, h4 {}
+
+
+h1, h2, h3, h4 {
+    font-family: ultra, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.0325rem;
+    padding-top: .25rem;
+}
 
 
 
@@ -117,6 +140,17 @@ article {
 aside {
     grid-column: 2 / 3;
     grid-row: 1;
+    border-left: 1px solid #28234b;
+    padding-left: .75rem;
+
+
+}
+
+
+aside p{
+    border-bottom: 1px solid #28234b;
+    padding-bottom: 1.5rem;
+    
 }
 
 
@@ -128,12 +162,14 @@ aside {
 
 
 header {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 
 nav {
-    
+    margin-top: 3rem;
+    text-align: center;
 }
 
 
@@ -154,7 +190,65 @@ figure {
 }
 
 
+.subsection {
+    margin: 1rem 0rem;
+}
+
+.subsection figure {
+    margin: 0rem .25rem;
+    background-color: #A3B2AB;
+}
+
+.subsection figure figcaption {
+    padding: 0.5rem 0.5rem;
+}
+
+ button {
+    font-family: 'ultra';
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 1rem 1.75rem;
+    border-radius: 5px;
+    background-color: rgb(37, 119, 173);
+    color: #fff;
+
+}
 
 
 
 
+a {
+    text-decoration: none;
+}
+
+
+nav a {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.45rem;
+    font-family: 'roboto';
+    color: #28234b;
+}
+
+
+nav {
+    border-top: 1px solid #28234b;
+    border-bottom: 1px solid #28234b;
+}
+
+nav a:focus, 
+nav a:hover {
+    color: solid #28234b;
+    
+    text-decoration: line-through;
+}
+
+footer {
+    padding-top: 2rem;
+}
+
+footer .attribution {
+    text-align: right;
+   word-wrap: break-word;
+}
+ 
