@@ -169,7 +169,9 @@ aside p .expand{
 aside p .expand:focus, 
 aside p .expand:hover {
     color: solid #1fc05c;
+    text-decoration: underline;
     
+
 }
 
 
@@ -229,21 +231,29 @@ figure {
 }
 
 
-/* ------ START WRITING YOUR CODE BELOW ------ */
 
- button {
-    font-family: 'ultra';
+
+.button {
+    background-color: grey; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    border: 1px solid #000;
-    padding: 1rem 1.75rem;
-    border-radius: 5px;
-    background-color: brown;
-    color: #fff;
+    font-size: 16px;
+    transition-duration: .4s;
+    cursor: pointer;
+  }
 
+.button:hover {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
 }
 
 
-
+  
 
 a {
     text-decoration: none;
@@ -279,10 +289,16 @@ footer {
 
 footer .attribution {
     text-align: right;
-   word-wrap: break-word;
+   word-wrap: normal;
    
 }
  
 
 footer {
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 8rem;
+    
+    word-wrap: break-word;
+    
 }
