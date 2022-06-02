@@ -94,8 +94,6 @@ h1{
 P {
     font-family: roboto, Arial, sans-serif;
     margin-top: 1rem;
-    font-size: 20px;
-    font-weight: normal;
 }
 
 
@@ -105,7 +103,6 @@ h1, h2, h3, h4 {
     font-family: ultra, Arial, Helvetica, sans-serif;
     letter-spacing: 0.0325rem;
     padding-top: .25rem;
-    font-weight: normal;
 }
 
 
@@ -225,7 +222,7 @@ figure {
 }
 
 .subsection figure {
-    margin: auto;
+    margin: 0rem .25rem;
     background-color: #A3B2AB;
 }
 
@@ -247,51 +244,7 @@ figure {
     font-size: 16px;
     transition-duration: .4s;
     cursor: pointer;
-    
   }
-
-.button:hover {
-    background-color: brown;
-    color: white;
-    cursor: pointer;
-}
-
-
-  
-
-a {
-    text-decoration: none;
-}
-
-
-nav a {
-    display: inline-block;
-    padding: 1.25rem 2rem;
-    font-size: 1.45rem;
-    font-family: 'roboto';
-    color: #28234b;
-}
-
-
-nav {
-    border-top: 1px solid #28234b;
-    border-bottom: 1px solid #28234b;
-}
-
-nav a:focus, 
-nav a:hover {
-    color: solid #28234b;
-    
-    text-decoration: line-through;
-}
-
-footer {
-    padding-top: 2rem;
-}
-
-/* ------ START WRITING YOUR CODE BELOW 0rem .25rem------ */
-
-
 
 .button:hover {
     background-color: brown;
@@ -334,28 +287,18 @@ footer {
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
-
-
-
-.attribution {
-    float: right;
+footer .attribution {
     text-align: right;
-   
-
+   word-wrap: normal;
    
 }
- .copyright {
-     float: left;
- }
+ 
 
 footer {
-    
-    
+    display: inline-block;
     white-space: nowrap;
-    margin-top: 5rem;
+    margin-top: 8rem;
     
     word-wrap: break-word;
-
-
     
 }
